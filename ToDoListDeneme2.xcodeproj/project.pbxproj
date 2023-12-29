@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E91D4FCC2B3DCDA200BBDB57 /* ToDoListDeneme2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91D4FCB2B3DCDA200BBDB57 /* ToDoListDeneme2App.swift */; };
+		E91D4FCC2B3DCDA200BBDB57 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91D4FCB2B3DCDA200BBDB57 /* ToDoListApp.swift */; };
 		E91D4FCE2B3DCDA200BBDB57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91D4FCD2B3DCDA200BBDB57 /* ContentView.swift */; };
 		E91D4FD02B3DCDA400BBDB57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91D4FCF2B3DCDA400BBDB57 /* Assets.xcassets */; };
 		E91D4FD32B3DCDA400BBDB57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91D4FD22B3DCDA400BBDB57 /* Preview Assets.xcassets */; };
+		E97A9CB92B3EE37A00D84E15 /* addNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A9CB82B3EE37A00D84E15 /* addNew.swift */; };
+		E97A9CBE2B3EE67B00D84E15 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A9CBD2B3EE67B00D84E15 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E91D4FC82B3DCDA200BBDB57 /* ToDoListDeneme2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListDeneme2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E91D4FCB2B3DCDA200BBDB57 /* ToDoListDeneme2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListDeneme2App.swift; sourceTree = "<group>"; };
+		E91D4FCB2B3DCDA200BBDB57 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		E91D4FCD2B3DCDA200BBDB57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E91D4FCF2B3DCDA400BBDB57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91D4FD22B3DCDA400BBDB57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E97A9CB82B3EE37A00D84E15 /* addNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNew.swift; sourceTree = "<group>"; };
+		E97A9CBD2B3EE67B00D84E15 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		E91D4FCA2B3DCDA200BBDB57 /* ToDoListDeneme2 */ = {
 			isa = PBXGroup;
 			children = (
-				E91D4FCB2B3DCDA200BBDB57 /* ToDoListDeneme2App.swift */,
-				E91D4FCD2B3DCDA200BBDB57 /* ContentView.swift */,
+				E97A9CBC2B3EE66500D84E15 /* App */,
+				E97A9CBB2B3EE65C00D84E15 /* View */,
+				E97A9CBA2B3EE64F00D84E15 /* Model */,
 				E91D4FCF2B3DCDA400BBDB57 /* Assets.xcassets */,
 				E91D4FD12B3DCDA400BBDB57 /* Preview Content */,
 			);
@@ -65,6 +70,31 @@
 				E91D4FD22B3DCDA400BBDB57 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E97A9CBA2B3EE64F00D84E15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E97A9CBD2B3EE67B00D84E15 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E97A9CBB2B3EE65C00D84E15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E91D4FCD2B3DCDA200BBDB57 /* ContentView.swift */,
+				E97A9CB82B3EE37A00D84E15 /* addNew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E97A9CBC2B3EE66500D84E15 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E91D4FCB2B3DCDA200BBDB57 /* ToDoListApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91D4FCE2B3DCDA200BBDB57 /* ContentView.swift in Sources */,
-				E91D4FCC2B3DCDA200BBDB57 /* ToDoListDeneme2App.swift in Sources */,
+				E97A9CB92B3EE37A00D84E15 /* addNew.swift in Sources */,
+				E91D4FCC2B3DCDA200BBDB57 /* ToDoListApp.swift in Sources */,
+				E97A9CBE2B3EE67B00D84E15 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    @Query private var dataItem : [DataItem]
+    @Environment(\.managedObjectContext) private var context
+    @State private var secilenData : DataItem?
     var body: some View {
         NavigationView{
             VStack {
@@ -23,21 +27,25 @@ struct ContentView: View {
                         .foregroundStyle(Color.black)
                     Spacer()
                     NavigationLink {
-                        Text("addNew")
+                        addNew()
                     } label: {
                         Image(systemName: "plus")
                             .font(.title)
                             .foregroundStyle(Color.black)
-                            
-                    
+                        
+                        
                     }.padding()
                     
-
+                    
                 }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.07)
-                .background(Color.yellow)
+                    .background(Color.yellow)
                 List{
-                    
-                    
+                    ForEach(dataItem, id: \.id) { data in
+                        NavigationLink(destination: addNew(secilenData : data)) {
+                            Text(data.title)
+                        }
+                        
+                    }
                 }
             }
         }
